@@ -87,6 +87,7 @@ table(my_data$ASP)
 my_data$DEAD <- ifelse(my_data$DDEADD <= 14, my_data$DDEADC, 9)
 table(my_data$DEAD)
 
+####
 #recode NAs as alive (again using 9 as a code)
 my_data$DEAD<-ifelse(is.na(my_data$DEAD<=14),9,my_data$DEAD)
 #take values for death and assign verbatim descriptions
